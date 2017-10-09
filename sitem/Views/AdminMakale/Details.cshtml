@@ -66,10 +66,14 @@
         <dd>
             @Html.DisplayFor(model => model.Okunma)
         </dd>
-        <p>
-            @Html.ActionLink("Detay", "Details", new { id = Model.MakaleId }) |
-            @Html.ActionLink("Back to List", "Index")
-        </p>
+        
+            <p>
+                @Html.ActionLink("Detay", "Details", new { id = Model.MakaleId }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+
+        
+
 
     </dl>
 </div>

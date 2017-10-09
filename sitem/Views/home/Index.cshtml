@@ -1,6 +1,6 @@
-﻿ @using PagedList
+﻿@using PagedList
 @using PagedList.Mvc
-@model  IPagedList  <sitem.Models.Makale>
+@model  IPagedList<sitem.Models.Makale>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml ";
@@ -21,7 +21,7 @@
          <img src="~/Uploads/UyeFoto/@item.Uye.Foto" class="img-circle img-responsive " width="50" alt="@item.Uye.AdSoyad" />
             <a href="/Uye/UyeProfil/@item.Uye.UyeId">@item.Uye.KullaniciAdi</a>
         <span class="glyphicon glyphicon-time"></span> @string.Format("{0: MMMM  yyyyy}", item.Tarih)
-        <span class="glyphicon glyphicon-tags"></span> @item.Etikets.Count()
+        <span class="glyphicon glyphicon-tags"></span> @item.Etikets.Count
 
         </p>
          

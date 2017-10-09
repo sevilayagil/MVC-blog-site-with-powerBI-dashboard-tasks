@@ -1,0 +1,50 @@
+﻿@model IEnumerable<sitem.Models.Yorum>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Admin.cshtml";
+}
+
+<h2>Yorumlar</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Makale.Baslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uye.KullaniciAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Icerik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tarih)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Makale.Baslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uye.KullaniciAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Icerik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tarih)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.YorumId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.YorumId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.YorumId })
+        </td>
+    </tr>
+}
+
+</table>

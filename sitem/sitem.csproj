@@ -88,6 +88,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebHelpers.3.2.3\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
       <Private>True</Private>
@@ -114,6 +118,14 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebMatrix.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.1.0.20105.408\lib\net40\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -438,6 +450,8 @@
     <Compile Include="Controllers\adminController.cs" />
     <Compile Include="Controllers\AdminKategoriController.cs" />
     <Compile Include="Controllers\AdminMakaleController.cs" />
+    <Compile Include="Controllers\AdminUyeController.cs" />
+    <Compile Include="Controllers\AdminYorumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TinyMCESampleController.cs" />
     <Compile Include="Controllers\UyeController.cs" />
@@ -497,6 +511,16 @@
     <Content Include="Views\Shared\EditorTemplates\tinymce_full_compressed.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\tinymce_full.cshtml" />
     <Content Include="Views\TinyMCESample\Index.cshtml" />
+    <Content Include="Views\AdminYorum\Create.cshtml" />
+    <Content Include="Views\AdminYorum\Delete.cshtml" />
+    <Content Include="Views\AdminYorum\Details.cshtml" />
+    <Content Include="Views\AdminYorum\Edit.cshtml" />
+    <Content Include="Views\AdminYorum\Index.cshtml" />
+    <Content Include="Views\AdminUye\Create.cshtml" />
+    <Content Include="Views\AdminUye\Delete.cshtml" />
+    <Content Include="Views\AdminUye\Details.cshtml" />
+    <Content Include="Views\AdminUye\Edit.cshtml" />
+    <Content Include="Views\AdminUye\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

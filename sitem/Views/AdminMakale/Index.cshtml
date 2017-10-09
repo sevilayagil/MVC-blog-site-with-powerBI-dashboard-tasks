@@ -1,4 +1,7 @@
-﻿@model IEnumerable<sitem.Models.Makale>
+﻿
+@model IPagedList<sitem.Models.Makale>
+@using PagedList
+@using PagedList.Mvc
 
 @{
     ViewBag.Title = "Index";
@@ -50,23 +53,26 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+            @Html.Label("Kategori MakeleId")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Baslik)
+            @Html.Label("Kategori Adı")
         </th>
         
         <th>
-            @Html.DisplayNameFor(model => model.Foto)
+            @Html.Label("Kategori Başlık")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tarih)
+            @Html.Label("Kategori Foto")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UyeId)
+            @Html.Label("Kategori Tarih")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Okunma)
+            @Html.Label("Kategori UyeID")
+        </th>
+        <th>
+            @Html.Label("Kategori Okunma")
         </th>
         <th></th>
     </tr>
@@ -103,3 +109,11 @@
 }
 
 </table>
+<div class="row">
+    <div class="col-md-8 text-center">
+        <div class="pagedList pagination">
+            @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page }), PagedListRenderOptions.Classic)
+
+        </div>
+    </div>
+</div>

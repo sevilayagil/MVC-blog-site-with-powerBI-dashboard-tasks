@@ -51,7 +51,7 @@
                 @if (Session["uyeid"] != null)
                 {
                     <li>
-                        <a href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()</a>
+                        <a href ="/Uye/Index/@Session["uyeid"]"> @Session["kullaniciadi"].ToString()</a>
                     </li>
                         <li>
                             <a href="/Uye/Logout/">Çıkış</a>
@@ -79,7 +79,7 @@
 
                 <ul class="nav navbar-right top-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Sevilay Ağıl <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Hoşgeldin<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             @if (Session["uyeid"] != null && Session["kullaniciadi"] != null && Session["yetkiid"] != null)
                             {

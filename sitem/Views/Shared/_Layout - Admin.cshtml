@@ -134,20 +134,12 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Sevilay Ağıl <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> @Session["kullaniciadi"].ToString() <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="/admin/Index/"><i class="fa fa-fw fa-user"></i> Admin Ozet</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
+                        
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="/Uye/Logout/"><i class="fa fa-fw fa-power-off"></i> Çıkış</a>
                         </li>
                     </ul>
                 </li>
@@ -165,10 +157,10 @@
                         <a href="/AdminMakale/Index/"><i class="fa fa-fw fa-table"></i> Makaleler</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="/AdminYorum/Index/"><i class="fa fa-fw fa-edit"></i>Yorumlar</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        <a href="/AdminUye/Index/"><i class="fa fa-fw fa-desktop"></i> Uyeler</a>
                     </li>
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>

@@ -53,3 +53,7 @@ C:\Users\Sevo\Desktop\sitem\sitem\bin\PagedList.Mvc.dll
 C:\Users\Sevo\Desktop\sitem\sitem\bin\PagedList.xml
 C:\Users\Sevo\Desktop\sitem\sitem\bin\PagedList.Mvc.xml
 C:\Users\Sevo\Desktop\sitem\sitem\obj\Debug\sitem.csprojResolveAssemblyReference.cache
+C:\Users\Sevo\Desktop\sitem\sitem\bin\Microsoft.Web.Helpers.dll
+C:\Users\Sevo\Desktop\sitem\sitem\bin\WebMatrix.Data.dll
+C:\Users\Sevo\Desktop\sitem\sitem\bin\WebMatrix.WebData.dll
+C:\Users\Sevo\Desktop\sitem\sitem\bin\WebMatrix.WebData.xml
